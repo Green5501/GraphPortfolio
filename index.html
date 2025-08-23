@@ -62,12 +62,12 @@
       color: green;
     }
     .headshot {
-      width: 100px;
-      height: 100px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
-      background: url('https://github.com/Green5501/GraphPortfolio/raw/main/TreeProfilePic.jpg') center/cover no-repeat;
+      object-fit: cover;
+      object-position: center;
       border: 3px solid #ccc;
-      flex-shrink: 0;
     }
     section {
       margin-bottom: 3rem;
@@ -114,7 +114,7 @@
       <div class="hero-text">
         <h2>Wendy Sharpe</h2>
       </div>
-      <div class="headshot"></div>
+      <img class="headshot" src="TreeProfilePic.jpg" alt="Profile photo of Wendy Sharpe" />
     </header>
 
     <section id="about">
