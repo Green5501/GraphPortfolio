@@ -83,11 +83,33 @@
     .weeks ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
     .weeks li {
-      padding: 0.8rem 1rem;
+      padding: 1rem 0;
       border-bottom: 1px solid #eee;
     }
+
+    /* Embeds */
+    .embed {
+      width: 100%;
+      height: 720px; /* adjust if needed */
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      background: #fff;
+    }
+    .embed-img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      display: block;
+    }
+    .alt-links {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
+
     footer {
       text-align: center;
       padding: 2rem 1rem;
@@ -146,14 +168,56 @@
     <section class="weeks" id="submissions">
       <h2>My Weekly Submissions</h2>
       <ul>
-        <li>Week 1 – Placeholder</li>
-        <li>Week 2 – Placeholder</li>
-        <li>Week 3 – Placeholder</li>
-        <li>Week 4 – Placeholder</li>
-        <li>Week 5 – Placeholder</li>
-        <li>Week 6 – Placeholder</li>
-        <li>Week 7 – Placeholder</li>
-        <li>Week 8 – Placeholder</li>
+        <li><strong>Week 1 – Placeholder</strong></li>
+
+        <!-- Week 2 -->
+        <li>
+          <strong>Week 2 – Website Workshop</strong>
+          <!-- Using githack CDN so the HTML renders & can be embedded -->
+          <iframe
+            class="embed"
+            src="https://raw.githack.com/Green5501/GraphPortfolio/main/week2workshop.html"
+            title="Week 2 – Workshop"
+            loading="lazy"
+          ></iframe>
+          <div class="alt-links">
+            If the preview doesn’t load, try
+            <a href="https://raw.githack.com/Green5501/GraphPortfolio/main/week2workshop.html" target="_blank" rel="noopener">opening it in a new tab</a>.
+          </div>
+        </li>
+
+        <!-- Week 3 -->
+        <li>
+          <strong>Week 3 – Job Market Analysis Report (PDF)</strong>
+          <iframe
+            class="embed"
+            src="https://raw.githubusercontent.com/Green5501/GraphPortfolio/main/job_market_analysis_report_fixed.html.pdf#view=FitH"
+            title="Week 3 – Job Market Analysis Report (PDF)"
+            loading="lazy"
+          ></iframe>
+          <div class="alt-links">
+            <a href="https://raw.githubusercontent.com/Green5501/GraphPortfolio/main/job_market_analysis_report_fixed.html.pdf" target="_blank" rel="noopener">Download / open full-screen</a>.
+          </div>
+        </li>
+
+        <!-- Week 4 -->
+        <li>
+          <strong>Week 4 – Screenshot</strong>
+          <img
+            class="embed-img"
+            src="https://raw.githubusercontent.com/Green5501/GraphPortfolio/main/Screenshot%202025-09-08%20153533.png"
+            alt="Week 4 screenshot"
+            loading="lazy"
+          />
+          <div class="alt-links">
+            <a href="https://raw.githubusercontent.com/Green5501/GraphPortfolio/main/Screenshot%202025-09-08%20153533.png" target="_blank" rel="noopener">Open image in new tab</a>.
+          </div>
+        </li>
+
+        <li><strong>Week 5 – Placeholder</strong></li>
+        <li><strong>Week 6 – Placeholder</strong></li>
+        <li><strong>Week 7 – Placeholder</strong></li>
+        <li><strong>Week 8 – Placeholder</strong></li>
       </ul>
     </section>
 
@@ -161,7 +225,7 @@
       <p>© 2025 Wendy Sharpe | Generative AI for Work & Research Portfolio</p>
     </footer>
   </main>
-<script src="https://cdn.botpress.cloud/webchat/v3.2/inject.js" defer></script>
-<script src="https://files.bpcontent.cloud/2025/09/08/11/20250908114253-PDPSXY4A.js" defer></script>
+  <script src="https://cdn.botpress.cloud/webchat/v3.2/inject.js" defer></script>
+  <script src="https://files.bpcontent.cloud/2025/09/08/11/20250908114253-PDPSXY4A.js" defer></script>
 </body>
 </html>
